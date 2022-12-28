@@ -1,0 +1,8 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: web
+connection:
+  timeout: 20
+  readTimeout: 20
