@@ -7,4 +7,6 @@ import java.util.List;
 public interface ProductService {
 
     List<Product> getProducts();
+
+    void sendMessage(Product product);
 }
