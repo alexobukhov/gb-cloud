@@ -12,3 +12,6 @@ spring:
     password: products
     username: products
     url: jdbc:postgresql://localhost:5432/products
+  activemq:
+      broker-url: http://localhost:8161
+      broker-cart-queue-in: cart-in

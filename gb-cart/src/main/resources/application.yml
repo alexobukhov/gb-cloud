@@ -1,0 +1,17 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: gb-cart
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driverClassName: org.postgresql.Driver
+    password: cart
+    username: cart
+    url: jdbc:postgresql://localhost:5432/cart
+  activemq:
+    broker-url: http://localhost:8161
+    broker-cart-queue-in: cart-in
