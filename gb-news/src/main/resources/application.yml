@@ -1,0 +1,14 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: gb-news
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/news
+    username: news
+    password: news
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
