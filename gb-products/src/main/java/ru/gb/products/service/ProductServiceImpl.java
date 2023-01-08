@@ -23,6 +23,8 @@ public class ProductServiceImpl implements ProductService {
         return productRepository.findAll();
     }
 
+    public Product getProduct(long id) { return productRepository.findById(id).orElse(null); }
+
     public void sendMessage(Product product) {
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
