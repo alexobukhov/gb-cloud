@@ -8,5 +8,7 @@ public interface ProductService {
 
     List<Product> getProducts();
 
+    Product getProduct(long id);
+
     void sendMessage(Product product);
 }
